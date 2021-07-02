@@ -38,3 +38,47 @@
     text-align: center;
 
 }
+
+.grid-one-content{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:var(--gap);
+    counter-reset: counter;
+}
+
+.grid h3{
+    font-size: 2rem;
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before{
+    font-size: 2rem;
+    counter-increment: counter;
+    content: counter(counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left:-1.5rem;
+    transform: rotate(5deg);
+
+}
+
+.grid-main-heading{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+}
