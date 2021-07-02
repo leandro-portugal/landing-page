@@ -1,4 +1,5 @@
 .intro-content{
+
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1.5fr;
@@ -8,26 +9,32 @@
 }
 
 .intro-text-content{
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
 
 .intro-text-content .intro-img{
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-}
-
-.intro-text-content h2{
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
 }
 
 .intro-img img{
 
     max-width: 100%;
     height: auto;
+}
+
+.what-content{
+
+    max-width: 65rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+
 }
