@@ -29,7 +29,7 @@ h1{
 }
 
 h2{
-    font-size: 5.5rem;
+    font-size: 5.5srem;
     margin-bottom: 5rem;
     text-transform: uppercase;
     line-height: 1.2;
@@ -54,3 +54,32 @@ h6{
 p{
     margin-bottom: 2rem;
 }
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color)
+  }
+  
+  tfoot td, table th {
+    background: var(--light-gray-color);
+  }
+  
