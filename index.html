@@ -16,12 +16,14 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body >
-<div class="menu-spacing"></div>
+
+<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-        <h1> <a href="#home"><img src="assets/img/logoipsum-logo-27.svg" alt="Logo Ipsum"></a></h1>
+        <h1 onclick="getElementById('close-menu').checked = false;"> <a href="#home"><img src="assets/img/logoipsum-logo-27.svg" alt="Logo Ipsum"></a></h1>
         <nav>
-            <ul>
+            <ul onclick="getElementById('close-menu').checked = false;">
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#grid-one">Trabalhos</a></li>
                 <li><a href="#gallery">Galeria</a></li>
@@ -35,6 +37,7 @@
     </section>
         </div>
     </aside>
+    <div class="menu-spacing"></div>
     <section  id="home" class=" intro main-bg section">
       <div class="main-content intro-content">
         <div class="intro-text-content">
@@ -296,6 +299,6 @@
     <footer id="footer" class="footer white-bg">
      <p> <a rel="nofollow" target="blank" href="https://www.linkedin.com/in/leandro-portugal-0194681aa/">&copy; Leandro Portugal</a></p> 
     </footer>
-    
+  
 </body>
 </html>
