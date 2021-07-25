@@ -4,7 +4,7 @@
     position: relative;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
-    gap: (--gap);
+    gap: var(--gap);
     min-width: 100vh;
 }
 
@@ -99,4 +99,79 @@
 .gallery-img img:hover{
 
     transform:translate(-3%, 3%) scale(1.2) rotate(-10deg) ;
+}
+
+.contact-form{
+
+    grid-column: span 2;
+
+}
+.contact-form .form-grid{
+
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+}
+
+.form-grid legend{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.form-group{
+   
+    flex: 1 1 320px;
+}
+.form-group label{
+
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+.form-group input,
+.form-group textarea{
+
+    border: none;
+    border-radius: 15px;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%; 
+}
+
+.form-group button{
+    border: 0.1rem solid var(--white-color) ;
+    border-radius: 15px;
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+
+    background: var(--white-color) ;
+    color: var(--primary-color);
+   
+}
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+ 
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: var( --primary-color);
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+
 }
